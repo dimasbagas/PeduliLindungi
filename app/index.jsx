@@ -1,4 +1,11 @@
-import { Image, StatusBar, Text, TextInput, View } from "react-native";
+import {
+  Image,
+  StatusBar,
+  Text,
+  TextInput,
+  View,
+  TouchableOpacity,
+} from "react-native";
 
 export default function Index() {
   return (
@@ -52,7 +59,20 @@ export default function Index() {
               fontSize: 20,
             }}
           ></TextInput>
-          <Text style={{textAlign: 'right', color: '#6200FF', marginTop: 5}}>Forget password?</Text>
+          <Text style={{ textAlign: "right", color: "#6200FF", marginTop: 10 }}>
+            Forget password?
+          </Text>
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#6200FF",
+              height: 57,
+              justifyContent: "center",
+              borderRadius: 10,
+              marginTop: 10,
+            }}
+          >
+            <Text style={{ textAlign: "center", fontSize: 20, color: "white" }}>Log in</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </>
